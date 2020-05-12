@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>【soft17】娛樂遊戲平台</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid max-width-lg">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" width="120" height="auto" alt="soft17">
+      </a>
+
+      <!-- 登入後顯示帳號 -->
+      <div class="text-rigth ml-auto">
+        <a href="">XXXXxxx帳號</a>
+        <a href="" class="flaticon-logout-or-send-square-with-right-arrow-interface-symbol"></a>
+      </div>
+
+      <button class="navbar-toggler border-0 pr-0 custom-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg p-0 bg-primary-o navbar-menu">
+    <div class="container-fluid max-width-lg">
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav text-center py-2">
+          <li class="nav-item active dropdown">
+            <a class="nav-link px-0 mx-3 dropdown-toggle" href="#" data-toggle="dropdown">會員中心</a>
+            <div class="dropdown-menu my-2 py-0 bod">
+              <a class="dropdown-item" href="meber_login.html">登入會員</a>
+              <a class="dropdown-item" href="meber_register.html">加入會員</a>
+              <a class="dropdown-item" href="meber_data.html">會員資料</a>
+              <a class="dropdown-item" href="meber_phone.html">手機驗證</a>
+              <a class="dropdown-item" href="meber_confirm.html">會員驗證</a>
+              <a class="dropdown-item" href="meber_up_pwd.html">修改密碼</a>
+              <a class="dropdown-item" href="meber_get_pwd.html">查詢密碼</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-0 mx-3" href="games.html">遊戲專區</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-0 mx-3 dropdown-toggle" href="#" data-toggle="dropdown">儲值購點</a>
+            <div class="dropdown-menu my-2 py-0 bod">
+              <a class="dropdown-item" href="pay_mycard.html">MyCard</a>
+              <a class="dropdown-item" href="pay_allpay.html">歐付寶</a>
+              <a class="dropdown-item" href="pay_paypal.html">PayPal</a>
+              <a class="dropdown-item" href="pay_overseas.html">海外儲值</a>
+              <a class="dropdown-item" href="pay_trans.html">平台轉點</a>
+              <a class="dropdown-item" href="pay_check.html">儲值查詢</a>
+              <a class="dropdown-item" href="pay_member.html">會員專屬優惠</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-0 mx-3 dropdown-toggle" href="#" data-toggle="dropdown">免費虛寶</a>
+            <div class="dropdown-menu my-2 py-0 bod">
+              <a class="dropdown-item" href="treasure_get.html">虛寶領取</a>
+              <a class="dropdown-item" href="treasure_serid.html">序號兌換</a>
+              <a class="dropdown-item" href="treasure_list.html">領取紀錄</a>
+            </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link px-0 mx-3" href="download.html">下載專區</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-0 mx-3 dropdown-toggle" href="#" data-toggle="dropdown">客服中心</a>
+            <div class="dropdown-menu my-2 py-0">
+              <a class="dropdown-item" href="service_fqa.html">FQA</a>
+              <a class="dropdown-item" href="service_mem_mag.html">會員管理規章</a>
+              <a class="dropdown-item" href="service_gm_mag.html">GM管理規章</a>
+              <a class="dropdown-item" href="service_security_note.html">防盜手冊</a>
+              <a class="dropdown-item" href="service_privacy.html">隱私權政策</a>
+              <a class="dropdown-item" href="service_table_download.html">表格下載</a>
+              <a class="dropdown-item" href="service_report.html">線上回報</a>
+              <a class="dropdown-item" href="service_list.html">線上回報紀錄查詢</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-0 mx-3 dropdown-toggle" href="#" data-toggle="dropdown">關於Soft17</a>
+            <div class="dropdown-menu my-2 py-0">
+              <a class="dropdown-item" href="about_us.html">認識Soft17</a>
+              <a class="dropdown-item" href="about_news.html">新聞專區</a>
+              <a class="dropdown-item" href="#" target="_blank">徵才訊息</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE-title -->
+  <section class="container-fluid">
+    <div class="row" style="position: relative;">
+      <div class="col-xl-11 pt-md-5 py-3 bg-tit bg-cover">
+        <div class="bg-pattern bg-absolute w-100" style="left:0;"></div>
+        <h2 class="display-4 text-light text-right max-width-lg mt-4 mt-md-5 pt-5">會員中心</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="container-fluid max-width-lg py-5">
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <nav class="nav flex-column nav-page">
+          <a class="nav-link border-bottom pl-0 mb-2 active" href="meber_login.html">登入會員</a>
+          <a class="nav-link border-bottom pl-0 mb-2" href="meber_register.html">加入會員</a>
+          <a class="nav-link border-bottom pl-0 mb-2" href="meber_data.html">會員資料</a>
+          <a class="nav-link border-bottom pl-0 mb-2" href="meber_phone.html">手機驗證</a>
+          <a class="nav-link border-bottom pl-0 mb-2" href="meber_confirm.html">會員驗證</a>
+          <a class="nav-link border-bottom pl-0 mb-2" href="meber_up_pwd.html">修改密碼</a>
+          <a class="nav-link border-bottom pl-0 mb-2" href="meber_get_pwd.html">查詢密碼</a>
+        </nav>
+      </div>
+      <div class="col-md-8">
+        <h5 class="text-primary mb-3">登入會員</h5>
+        <div class="row">
+          <div class="col-sm-6">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="請輸入「會員E-mail帳號」">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="請輸入「會員密碼」">
+              </div>
+
+              <div class="form-group">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="remember-account">
+                  <label class="custom-control-label" for="remember-account">記住帳號</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="auto-account">
+                  <label class="custom-control-label" for="auto-account">14天自動登入</label>
+                </div>
+              </div>
+
+              <div class="form-group form-row align-items-center mt-5">
+                <div class="col-auto">
+                  <button type="button" class="btn btn-block btn-primary px-5 py-2">登入</button>
+                </div>
+                <div class="col">
+                  <a href="#">忘記密碼？</a>
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <div class="login-other-page text-center">
+              <p>免註冊，使用以下方式登入</p>
+              <div class="icon-group">
+                <a href="" class="btn btn-outline-primary rounded">
+                  <i class="flaticon-facebook-letter-logo"></i>
+                </a>
+                <a href="" class="btn ml-2 btn-outline-primary rounded">
+                  <i class="flaticon-google-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-primary text-center mt-5 py-4">
+          咦？還不是會員！現在就馬上<a href="meber_register.html" class="alert-link">免費註冊</a>!
+        </div>
+        <div class="mt-5 border-top">
+          <p class="text-primary text-center h2 my-4">
+            <i class="flaticon-warning"></i>
+          </p>
+          <ul class="note">
+            <li>勾選「14天自動登入」，登入成功後，用戶於14天內關閉瀏覽器或電腦，再重新開啟soft17網頁，系統皆保持自動登入的狀態，不建議透過共用電腦使用。</li>
+            <li>您可透過各知名網站，如「FB、Google」進行直接登入「soft17」平台，並藉由該帳號進行soft17平台上所有遊戲。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-light text-center text-md-left">
+    <div class="container-fluid max-width-lg py-5">
+      <div class="row  align-items-center">
+        <div class="col-md-4">
+          <a href="">
+            <img src="images/svg/logo.svg" alt="SOFT17 LOGO">
+          </a>
+          <p class="mb-0">@2018 soft17 All rights reserved.</p>
+        </div>
+        <div class="col-md-5 ml-auto">
+          <div class="icon-group text-md-right mt-3">
+            <a href="" class="btn btn-outline-light rounded-circle">
+              <i class="flaticon-google-play"></i>
+            </a>
+            <a href="" class="btn btn-outline-light rounded-circle">
+              <i class="flaticon-apple"></i>
+            </a>
+            <a href="" class="btn btn-outline-light rounded-circle">
+              <i class="flaticon-facebook-letter-logo"></i>
+            </a>
+            <a href="" class="btn btn-outline-light rounded-circle">
+              <i href="#" class="flaticon-close-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="back-to-top">
+    <i class="flaticon-up-arrow"></i>
+  </div>
+
+  <script src="javascripts/vendor.js"></script>
+  <script src="javascripts/script.js"></script>
+
+</body>
+
+</html>

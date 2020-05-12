@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>【soft17】娛樂遊戲平台</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid max-width-lg">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" width="120" height="auto" alt="soft17">
+      </a>
+
+      <!-- 登入後顯示帳號 -->
+      <div class="text-rigth ml-auto">
+        <a href="">XXXXxxx帳號</a>
+        <a href="" class="flaticon-logout-or-send-square-with-right-arrow-interface-symbol"></a>
+      </div>
+
+      <button class="navbar-toggler border-0 pr-0 custom-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg p-0 bg-primary-o navbar-menu">
+    <div class="container-fluid max-width-lg">
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav text-center py-2">
+          <li class="nav-item dropdown">
+            <a class="nav-link px-0 mx-3 dropdown-toggle" href="#" data-toggle="dropdown">會員中心</a>
+            <div class="dropdown-menu my-2 py-0">
+              <a class="dropdown-item" href="meber_login.html">登入會員</a>
+              <a class="dropdown-item" href="meber_register.html">加入會員</a>
+              <a class="dropdown-item" href="meber_data.html">會員資料</a>
+              <a class="dropdown-item" href="meber_phone.html">手機驗證</a>
+              <a class="dropdown-item" href="meber_confirm.html">會員驗證</a>
+              <a class="dropdown-item" href="meber_up_pwd.html">修改密碼</a>
+              <a class="dropdown-item" href="meber_get_pwd.html">查詢密碼</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-0 mx-3" href="games.html">遊戲專區</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link px-0 mx-3 dropdown-toggle" href="#" data-toggle="dropdown">儲值購點</a>
+            <div class="dropdown-menu my-2 py-0">
+              <a class="dropdown-item" href="pay_mycard.html">MyCard</a>
+              <a class="dropdown-item" href="pay_allpay.html">歐付寶</a>
+              <a class="dropdown-item" href="pay_paypal.html">PayPal</a>
+              <a class="dropdown-item" href="pay_overseas.html">海外儲值</a>
+              <a class="dropdown-item" href="pay_trans.html">平台轉點</a>
+              <a class="dropdown-item" href="pay_check.html">儲值查詢</a>
+              <a class="dropdown-item" href="pay_member.html">會員專屬優惠</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-0 mx-3 dropdown-toggle" href="#" data-toggle="dropdown">免費虛寶</a>
+            <div class="dropdown-menu my-2 py-0">
+              <a class="dropdown-item" href="treasure_get.html">虛寶領取</a>
+              <a class="dropdown-item" href="treasure_serid.html">序號兌換</a>
+              <a class="dropdown-item" href="treasure_list.html">領取紀錄</a>
+            </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link px-0 mx-3" href="download.html">下載專區</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-0 mx-3 dropdown-toggle" href="#" data-toggle="dropdown">客服中心</a>
+            <div class="dropdown-menu my-2 py-0">
+              <a class="dropdown-item" href="service_fqa.html">FQA</a>
+              <a class="dropdown-item" href="service_mem_mag.html">會員管理規章</a>
+              <a class="dropdown-item" href="service_gm_mag.html">GM管理規章</a>
+              <a class="dropdown-item" href="service_security_note.html">防盜手冊</a>
+              <a class="dropdown-item" href="service_privacy.html">隱私權政策</a>
+              <a class="dropdown-item" href="service_table_download.html">表格下載</a>
+              <a class="dropdown-item" href="service_report.html">線上回報</a>
+              <a class="dropdown-item" href="service_list.html">線上回報紀錄查詢</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-0 mx-3 dropdown-toggle" href="#" data-toggle="dropdown">關於Soft17</a>
+            <div class="dropdown-menu my-2 py-0">
+              <a class="dropdown-item" href="about_us.html">認識Soft17</a>
+              <a class="dropdown-item" href="about_news.html">新聞專區</a>
+              <a class="dropdown-item" href="#" target="_blank">徵才訊息</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE-title -->
+  <section class="container-fluid">
+    <div class="row" style="position: relative;">
+      <div class="col-xl-11 pt-md-5 py-3 bg-tit bg-cover">
+        <div class="bg-pattern bg-absolute w-100" style="left:0;"></div>
+        <h2 class="display-4 text-light text-right max-width-lg mt-4 mt-md-5 pt-5">儲值購點</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="container-fluid max-width-lg py-5">
+    <div class="row">
+      <!-- accordion-nav -->
+      <div class="col-md-4 mb-5">
+
+        <nav id="accordion" class="nav flex-column nav-page ">
+
+          <a class="nav-link border-bottom pl-0 mb-2 collapsed" href="pay_mycard.html" data-toggle="collapse" data-target="#collapseOne">My Card</a>
+          <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <nav class="list-group collapse-content-nav">
+              <a class="list-group-item border-0 active" data-toggle="list" href="#mycard-card">點數卡</a>
+              <a class="list-group-item border-0" data-toggle="list" href="#mycard-trans">轉點數</a>
+              <a class="list-group-item border-0" data-toggle="list" href="#mycard-credit">信用卡 </a>
+              <a class="list-group-item border-0" data-toggle="list" href="#mycard-telecom">小額電信</a>
+            </nav>
+          </div>
+
+          <a class="nav-link border-bottom pl-0 mb-2 collapsed" href="pay_allpay.html" data-toggle="collapse" data-target="#collapseTwo">歐付寶</a>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <nav class="list-group collapse-content-nav">
+              <a class="list-group-item border-0 active" data-toggle="list" href="#allpay-webatm">Web ATM</a>
+              <a class="list-group-item border-0" data-toggle="list" href="#allpay-atm">ATM轉帳</a>
+            </nav>
+          </div>
+
+          <a class="nav-link border-bottom pl-0 mb-2" href="pay_paypal.html">PayPal</a>
+
+          <a class="nav-link border-bottom pl-0 mb-2 active" href="pay_overseas.html" data-toggle="collapse" data-target="#collapseThree">海外儲值</a>
+          <div id="collapseThree" class="collapse show" data-parent="#accordion">
+            <nav class="list-group collapse-content-nav">
+              <a class="list-group-item border-0 active" data-toggle="list" href="#overseas-credit">信用卡</a>
+              <a class="list-group-item border-0" data-toggle="list" href="#overseas-alipay">支付寶</a>
+              <a class="list-group-item border-0" data-toggle="list" href="#overseas-tenpay">財富通</a>
+            </nav>
+          </div>
+
+          <a class="nav-link border-bottom pl-0 mb-2" href="pay_trans.html">平台轉點</a>
+          <a class="nav-link border-bottom pl-0 mb-2" href="pay_check.html">儲值查詢</a>
+          <a class="nav-link border-bottom pl-0 mb-2" href="pay_member.html">會員專屬優惠</a>
+
+        </nav>
+
+      </div>
+      <div class="col-md-8">
+        <div class="tab-content" id="nav-tabContent">
+          <!-- 海外儲值 信用卡 -->
+          <article class="tab-pane fade show active" id="overseas-credit" role="tabpanel">
+            <h5 class="text-primary mb-3">海外儲值-信用卡</h5>
+            <form>
+              <div class="form-group mb-5">
+                <label for="">請選擇遊戲</label>
+                <select class="custom-select" id="">
+                  <option>遊戲名稱</option>
+                  <option>遊戲名稱</option>
+                  <option>遊戲名稱</option>
+                  <option>遊戲名稱</option>
+                </select>
+                <small class="form-text text-muted">若要於遊戲中購買商品，請務必先進行轉點數動作</small>
+              </div>
+
+              <div class="form-group mb-5">
+                <label for="">請選擇點數</label>
+                <div class="form-row">
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-count-1" name="overseas-credit-count">
+                        <label class="custom-control-label" for="overseas-credit-count-1">150點</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-count-2" name="overseas-credit-count">
+                        <label class="custom-control-label" for="overseas-credit-count-2">300點</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-count-3" name="overseas-credit-count">
+                        <label class="custom-control-label" for="overseas-credit-count-3">350點</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-count-4" name="overseas-credit-count">
+                        <label class="custom-control-label" for="overseas-credit-count-4">400點</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-count-5" name="overseas-credit-count">
+                        <label class="custom-control-label" for="overseas-credit-count-5">450點</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-count-6" name="overseas-credit-count">
+                        <label class="custom-control-label" for="overseas-credit-count-6">500點</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-count-7" name="overseas-credit-count">
+                        <label class="custom-control-label" for="overseas-credit-count-7">1000點</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-count-8" name="overseas-credit-count">
+                        <label class="custom-control-label" for="overseas-credit-count-8">1150點</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-count-9" name="overseas-credit-count">
+                        <label class="custom-control-label" for="overseas-credit-count-9">2000點</label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="form-group mb-5">
+                <label for="">請選擇信用卡類別</label>
+                <div class="form-row">
+                  <div class="col-6 col-sm-4 col-lg-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-carrier-1" name="overseas-credit-carrier">
+                        <label class="custom-control-label" for="overseas-credit-carrier-1">Visa</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-carrier-2" name="overseas-credit-carrier">
+                        <label class="custom-control-label" for="overseas-credit-carrier-2">Visa（3D驗證）</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-credit-carrier-3" name="overseas-credit-carrier">
+                        <label class="custom-control-label" for="overseas-credit-carrier-3">MasterCard</label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-5 px-4">確認送出</button>
+            </form>
+
+            <div class="mt-5 border-top">
+              <p class="text-primary text-center h2 my-4">
+                <i class="flaticon-warning"></i>
+              </p>
+              <ul class="note">
+                <li>近來詐騙頻傳，提醒您「妥善保存個人資料」，請勿在電話、網路中洩漏家中成員的個資，也勿聽信他人指示購買點數，避免上當受害。如有發現疑似詐騙，請撥打165反詐騙專線。</li>
+              </ul>
+            </div>
+          </article>
+          <!-- 海外儲值 支付寶 -->
+          <article class="tab-pane fade" id="overseas-alipay" role="tabpanel">
+            <h5 class="text-primary mb-3">海外儲值-支付寶</h5>
+            <div class="alert alert-danger text-center">
+              <i class="flaticon-warning"></i> 須擁有支付寶帳號始可儲值!
+            </div>
+            <form>
+              <div class="form-group mb-5">
+                <label for="">請選擇遊戲</label>
+                <select class="custom-select" id="">
+                  <option>遊戲名稱</option>
+                  <option>遊戲名稱</option>
+                  <option>遊戲名稱</option>
+                  <option>遊戲名稱</option>
+                </select>
+                <small class="form-text text-muted">若要於遊戲中購買商品，請務必先進行轉點數動作</small>
+              </div>
+
+              <div class="form-group mb-5">
+                <label for="">請選擇金額</label>
+                <div class="form-row">
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-alipay-1" name="overseas-alipay">
+                        <label class="custom-control-label" for="overseas-alipay-1">150元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-alipay-2" name="overseas-alipay">
+                        <label class="custom-control-label" for="overseas-alipay-2">350元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-alipay-3" name="overseas-alipay">
+                        <label class="custom-control-label" for="overseas-alipay-3">500元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-alipay-4" name="overseas-alipay">
+                        <label class="custom-control-label" for="overseas-alipay-4">1000元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-alipay-5" name="overseas-alipay">
+                        <label class="custom-control-label" for="overseas-alipay-5">2000元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-alipay-6" name="overseas-alipay">
+                        <label class="custom-control-label" for="overseas-alipay-6">5000元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-alipay-7" name="overseas-alipay">
+                        <label class="custom-control-label" for="overseas-alipay-7">10000元</label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary mt-5 px-4">確認送出</button>
+            </form>
+
+            <nav class="nav nav-pills mb-3 mt-5">
+              <a class="nav-link border border-primary active mr-1 mb-2" data-toggle="pill" href="#receipt1-donate" role="tab">發票捐贈</a>
+              <a class="nav-link border border-primary mr-1 mb-2" data-toggle="pill" href="#receipt1-E" role="tab">電子發票</a>
+              <a class="nav-link border border-primary mr-1 mb-2" data-toggle="pill" href="#receipt1-phone" role="tab">載具</a>
+              <a class="nav-link border border-primary mr-1 mb-2" data-toggle="pill" href="#receipt1-triplicate" role="tab">三聯式發票</a>
+            </nav>
+            <div class="tab-content">
+              <!-- 發票捐贈 -->
+              <div class="tab-pane fade show active" id="receipt1-donate" role="tabpanel">
+                <form action="">
+                  <div class="form-group">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" class="custom-control-input" id="radio1-donate" name="">
+                      <label class="custom-control-label" for="radio1-donate">發票捐贈給「16888財團法人癌症希望基金會」</label>
+                    </div>
+                  </div>
+                </form>
+                <div class="bg-light p-3">
+                  <p class="text-primary">發票捐贈說明事項</p>
+                  <ul class="note">
+                    <li>完成捐贈發票，該筆電子發票之中獎權利即屬於受捐贈社福團體，消費者不得主張任何中獎權利。</li>
+                    <li>依據法令規定，已捐贈之發票無法索取正本及兌獎，捐贈發票電子檔將不顯示。</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 電子發票 -->
+              <div class="tab-pane fade" id="receipt1-E" role="tabpanel">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="姓名">
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="聯絡電話">
+                    <small id="" class="form-text text-muted">填寫時請勿帶入任何空白或符號（EX.0912345678）</small>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="電子郵件">
+                  </div>
+                  <div class="form-group form-row">
+                    <div class="col-4">
+                      <input type="number" class="form-control" placeholder="郵政區號">
+                    </div>
+                    <div class="col-8">
+                      <input type="text" class="form-control" placeholder="地址">
+                    </div>
+                  </div>
+                </form>
+                <div class="bg-light p-3">
+                  <p class="text-primary">電子發票說明事項</p>
+                  <ul class="note">
+                    <li>選擇使用「電子發票」開立之發票，使用者將會收「發票開立通知」信函，可透過查詢來進行索取發票。凡中獎之發票將會由系統自動兌獎，並Email通知中獎資訊且比紙本發票寄送。</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 載具 -->
+              <div class="tab-pane fade" id="receipt1-phone" role="tabpanel">
+                <form action="">
+                  <div class="form-group form-inline">
+                    <label for="">載具類別：</label>
+                    <div class="custom-control custom-radio ml-3">
+                      <input type="radio" class="custom-control-input" id="receipt1-phone1" name="receipt-phone">
+                      <label class="custom-control-label" for="receipt1-phone1">手機條碼</label>
+                    </div>
+                    <div class="custom-control custom-radio ml-3">
+                      <input type="radio" class="custom-control-input" id="receipt1-phone2" name="receipt-phone">
+                      <label class="custom-control-label" for="receipt1-phone2">自然人憑證</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="手機條碼 / 自然人憑證">
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="聯絡電話">
+                    <small id="" class="form-text text-muted">填寫時請勿帶入任何空白或符號（EX.0912345678）</small>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="電子郵件">
+                  </div>
+                </form>
+                <div class="bg-light p-3">
+                  <p class="text-primary">載具說明事項</p>
+                  <ul class="note">
+                    <li>
+                      <a href="https://www.einvoice.nat.gov.tw/APMEMBERVAN/GeneralCarrier/generalCarrier" target="_blank">點此</a>申請手機條碼。</li>
+                    <li>
+                      <a href="http://moica.nat.gov.tw/apply.html" target="_blank">點此</a>申請自然人憑證。</li>
+                    <li>載具號碼輸入錯誤者，無法修改、更換、重新索取，請務必輸入正確。</li>
+                    <li>選擇使用「載具」功能所開立之發票，可在48小時後於
+                      <a href="https://www.einvoice.nat.gov.tw/APMEMBERVAN/GeneralCarrier/generalCarrier" target="_blank">「財政部電子發票整合服務平台」</a>網站進行查詢，並由該平台保管與中獎通知。詳細說明請參考
+                      <a href="https://www.einvoice.nat.gov.tw/index!easyKnow?CSRT=18097524201385938050" target="_blank">「電子發票懶人包」</a>。</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 三聯式紙本發票 -->
+              <div class="tab-pane fade" id="receipt1-triplicate" role="tabpanel">
+                <form action="">
+                  <div class="form-group form-row">
+                    <div class="col-4">
+                      <input type="text" class="form-control" placeholder="統一編號">
+                    </div>
+                    <div class="col-8">
+                      <input type="text" class="form-control" placeholder="抬頭">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="聯絡電話">
+                    <small id="" class="form-text text-muted">填寫時請勿帶入任何空白或符號（EX.0912345678）</small>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="電子郵件">
+                  </div>
+                  <div class="form-group form-row">
+                    <div class="col-4">
+                      <input type="number" class="form-control" placeholder="郵政區號">
+                    </div>
+                    <div class="col-8">
+                      <input type="text" class="form-control" placeholder="地址">
+                    </div>
+                  </div>
+                </form>
+                <div class="bg-light p-3">
+                  <p class="text-primary">紙本發票（三聯式）說明事項</p>
+                  <ul class="note">
+                    <li>發票於訂單成立後10個工作天寄出紙本發票，發票寄送資料，請務必填寫正確以利收取。若因資料填寫不完整或填寫錯誤，導致發票無法寄送或寄錯地址，恕不另行補發。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 border-top">
+              <p class="text-primary text-center h2 my-4">
+                <i class="flaticon-warning"></i>
+              </p>
+              <ul class="note">
+                <li>近來詐騙頻傳，提醒您「妥善保存個人資料」，請勿在電話、網路中洩漏家中成員的個資，也勿聽信他人指示購買點數，避免上當受害。如有發現疑似詐騙，請撥打165反詐騙專線。</li>
+              </ul>
+            </div>
+          </article>
+          <!-- 海外儲值 財富通 -->
+          <article class="tab-pane fade" id="overseas-tenpay" role="tabpanel">
+            <h5 class="text-primary mb-3">海外儲值-財富通</h5>
+            <div class="alert alert-danger text-center">
+              <i class="flaticon-warning"></i> 須擁有財付通帳號始可儲值!
+            </div>
+            <form>
+              <div class="form-group mb-5">
+                <label for="">請選擇遊戲</label>
+                <select class="custom-select" id="">
+                  <option>遊戲名稱</option>
+                  <option>遊戲名稱</option>
+                  <option>遊戲名稱</option>
+                  <option>遊戲名稱</option>
+                </select>
+                <small class="form-text text-muted">若要於遊戲中購買商品，請務必先進行轉點數動作</small>
+              </div>
+
+              <div class="form-group mb-5">
+                <label for="">請選擇金額</label>
+                <div class="form-row">
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-tenpay-1" name="overseas-tenpay">
+                        <label class="custom-control-label" for="overseas-tenpay-1">150元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-tenpay-2" name="overseas-tenpay">
+                        <label class="custom-control-label" for="overseas-tenpay-2">350元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-tenpay-3" name="overseas-tenpay">
+                        <label class="custom-control-label" for="overseas-tenpay-3">500元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-tenpay-4" name="overseas-tenpay">
+                        <label class="custom-control-label" for="overseas-tenpay-4">1000元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-tenpay-5" name="overseas-tenpay">
+                        <label class="custom-control-label" for="overseas-tenpay-5">2000元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-tenpay-6" name="overseas-tenpay">
+                        <label class="custom-control-label" for="overseas-tenpay-6">5000元</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 mb-2">
+                    <div class="border py-2 d-flex justify-content-center">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="overseas-tenpay-7" name="overseas-tenpay">
+                        <label class="custom-control-label" for="overseas-tenpay-7">10000元</label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary mt-5 px-4">確認送出</button>
+            </form>
+
+            <nav class="nav nav-pills mb-3 mt-5">
+              <a class="nav-link border border-primary active mr-1 mb-2" data-toggle="pill" href="#receipt2-donate" role="tab">發票捐贈</a>
+              <a class="nav-link border border-primary mr-1 mb-2" data-toggle="pill" href="#receipt2-E" role="tab">電子發票</a>
+              <a class="nav-link border border-primary mr-1 mb-2" data-toggle="pill" href="#receipt2-phone" role="tab">載具</a>
+              <a class="nav-link border border-primary mr-1 mb-2" data-toggle="pill" href="#receipt2-triplicate" role="tab">三聯式發票</a>
+            </nav>
+            <div class="tab-content">
+              <!-- 發票捐贈 -->
+              <div class="tab-pane fade show active" id="receipt2-donate" role="tabpanel">
+                <form action="">
+                  <div class="form-group">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" class="custom-control-input" id="radio2-donate" name="">
+                      <label class="custom-control-label" for="radio2-donate">發票捐贈給「16888財團法人癌症希望基金會」</label>
+                    </div>
+                  </div>
+                </form>
+                <div class="bg-light p-3">
+                  <p class="text-primary">發票捐贈說明事項</p>
+                  <ul class="note">
+                    <li>完成捐贈發票，該筆電子發票之中獎權利即屬於受捐贈社福團體，消費者不得主張任何中獎權利。</li>
+                    <li>依據法令規定，已捐贈之發票無法索取正本及兌獎，捐贈發票電子檔將不顯示。</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 電子發票 -->
+              <div class="tab-pane fade" id="receipt2-E" role="tabpanel">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="姓名">
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="聯絡電話">
+                    <small id="" class="form-text text-muted">填寫時請勿帶入任何空白或符號（EX.0912345678）</small>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="電子郵件">
+                  </div>
+                  <div class="form-group form-row">
+                    <div class="col-4">
+                      <input type="number" class="form-control" placeholder="郵政區號">
+                    </div>
+                    <div class="col-8">
+                      <input type="text" class="form-control" placeholder="地址">
+                    </div>
+                  </div>
+                </form>
+                <div class="bg-light p-3">
+                  <p class="text-primary">電子發票說明事項</p>
+                  <ul class="note">
+                    <li>選擇使用「電子發票」開立之發票，使用者將會收「發票開立通知」信函，可透過查詢來進行索取發票。凡中獎之發票將會由系統自動兌獎，並Email通知中獎資訊且比紙本發票寄送。</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 載具 -->
+              <div class="tab-pane fade" id="receipt2-phone" role="tabpanel">
+                <form action="">
+                  <div class="form-group form-inline">
+                    <label for="">載具類別：</label>
+                    <div class="custom-control custom-radio ml-3">
+                      <input type="radio" class="custom-control-input" id="receipt2-phone1" name="receipt-phone">
+                      <label class="custom-control-label" for="receipt2-phone1">手機條碼</label>
+                    </div>
+                    <div class="custom-control custom-radio ml-3">
+                      <input type="radio" class="custom-control-input" id="receipt2-phone2" name="receipt-phone">
+                      <label class="custom-control-label" for="receipt2-phone2">自然人憑證</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="手機條碼 / 自然人憑證">
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="聯絡電話">
+                    <small id="" class="form-text text-muted">填寫時請勿帶入任何空白或符號（EX.0912345678）</small>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="電子郵件">
+                  </div>
+                </form>
+                <div class="bg-light p-3">
+                  <p class="text-primary">載具說明事項</p>
+                  <ul class="note">
+                    <li>
+                      <a href="https://www.einvoice.nat.gov.tw/APMEMBERVAN/GeneralCarrier/generalCarrier" target="_blank">點此</a>申請手機條碼。</li>
+                    <li>
+                      <a href="http://moica.nat.gov.tw/apply.html" target="_blank">點此</a>申請自然人憑證。</li>
+                    <li>載具號碼輸入錯誤者，無法修改、更換、重新索取，請務必輸入正確。</li>
+                    <li>選擇使用「載具」功能所開立之發票，可在48小時後於
+                      <a href="https://www.einvoice.nat.gov.tw/APMEMBERVAN/GeneralCarrier/generalCarrier" target="_blank">「財政部電子發票整合服務平台」</a>網站進行查詢，並由該平台保管與中獎通知。詳細說明請參考
+                      <a href="https://www.einvoice.nat.gov.tw/index!easyKnow?CSRT=18097524201385938050" target="_blank">「電子發票懶人包」</a>。</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 三聯式紙本發票 -->
+              <div class="tab-pane fade" id="receipt2-triplicate" role="tabpanel">
+                <form action="">
+                  <div class="form-group form-row">
+                    <div class="col-4">
+                      <input type="text" class="form-control" placeholder="統一編號">
+                    </div>
+                    <div class="col-8">
+                      <input type="text" class="form-control" placeholder="抬頭">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="聯絡電話">
+                    <small id="" class="form-text text-muted">填寫時請勿帶入任何空白或符號（EX.0912345678）</small>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="電子郵件">
+                  </div>
+                  <div class="form-group form-row">
+                    <div class="col-4">
+                      <input type="number" class="form-control" placeholder="郵政區號">
+                    </div>
+                    <div class="col-8">
+                      <input type="text" class="form-control" placeholder="地址">
+                    </div>
+                  </div>
+                </form>
+                <div class="bg-light p-3">
+                  <p class="text-primary">紙本發票（三聯式）說明事項</p>
+                  <ul class="note">
+                    <li>發票於訂單成立後10個工作天寄出紙本發票，發票寄送資料，請務必填寫正確以利收取。若因資料填寫不完整或填寫錯誤，導致發票無法寄送或寄錯地址，恕不另行補發。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 border-top">
+              <p class="text-primary text-center h2 my-4">
+                <i class="flaticon-warning"></i>
+              </p>
+              <ul class="note">
+                <li>近來詐騙頻傳，提醒您「妥善保存個人資料」，請勿在電話、網路中洩漏家中成員的個資，也勿聽信他人指示購買點數，避免上當受害。如有發現疑似詐騙，請撥打165反詐騙專線。</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="bg-primary text-light text-center text-md-left">
+    <div class="container-fluid max-width-lg py-5">
+      <div class="row  align-items-center">
+        <div class="col-md-4">
+          <a href="">
+            <img src="images/svg/logo.svg" alt="SOFT17 LOGO">
+          </a>
+          <p class="mb-0">@2018 soft17 All rights reserved.</p>
+        </div>
+        <div class="col-md-5 ml-auto">
+          <div class="icon-group text-md-right mt-3">
+            <a href="" class="btn btn-outline-light rounded-circle">
+              <i class="flaticon-google-play"></i>
+            </a>
+            <a href="" class="btn btn-outline-light rounded-circle">
+              <i class="flaticon-apple"></i>
+            </a>
+            <a href="" class="btn btn-outline-light rounded-circle">
+              <i class="flaticon-facebook-letter-logo"></i>
+            </a>
+            <a href="" class="btn btn-outline-light rounded-circle">
+              <i href="#" class="flaticon-close-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="back-to-top">
+    <i class="flaticon-up-arrow"></i>
+  </div>
+
+  <script src="javascripts/vendor.js"></script>
+  <script src="javascripts/script.js"></script>
+
+</body>
+
+</html>
